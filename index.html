@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- React Core library -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+    ></script>
+
+    <!-- ReactDOM library -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+    ></script>
+    
+    <script defer type="text/babel" src="./index.js" ></script>
+    
+    <link rel="stylesheet" href="style.css" />
+
+    <title>React Intro</title>
+  </head>
+  <body>
+
+    <h1>This is the h1 in body that React cannot touch</h1>
+    <!-- root element where we want to inject the React app -->
+    <div id="root">
+      <!-- We will limit React to ONLY manipulate DOM inside this tag -->
+    </div>
+
+  </body>
+</html>
